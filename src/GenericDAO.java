@@ -14,7 +14,9 @@ public abstract class GenericDAO<T> {
      public void save(T entity) {  
           em.persist(entity);  
           em.flush();  
+		  system.out.println("juste pour tester");
      }  
+	 
      public void update(T entity) {  
           em.merge(entity);  
      }  
