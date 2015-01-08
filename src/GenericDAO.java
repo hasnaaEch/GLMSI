@@ -13,13 +13,11 @@ public abstract class GenericDAO<T> {
      }  
      public void save(T entity) {  
           em.persist(entity);  
-<<<<<<< HEAD
+
           em.flush();  
 		  system.out.println("juste pour tester");
 		  
-=======
-          //em.flush();  
->>>>>>> dff225b517f8ec88dd4177db6b97fb24ba63b8c6
+
      }  
 	 
      public void update(T entity) {  
