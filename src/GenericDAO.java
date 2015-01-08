@@ -15,6 +15,7 @@ public abstract class GenericDAO<T> {
           em.persist(entity);  
           em.flush();  
 		  system.out.println("juste pour tester");
+		  
      }  
 	 
      public void update(T entity) {  
