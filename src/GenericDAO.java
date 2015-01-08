@@ -13,7 +13,7 @@ public abstract class GenericDAO<T> {
      }  
      public void save(T entity) {  
           em.persist(entity);  
-          em.flush();  
+          //em.flush();  
      }  
      public void update(T entity) {  
           em.merge(entity);  
